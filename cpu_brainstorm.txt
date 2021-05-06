@@ -1,0 +1,14 @@
+
+CPU
+
+word / register length
+defined instructions -> alu abstracted away by instrs
+
+- fetch instruction from instruction pointer 
+- decode: split word into opcode and operands
+- execute: result ends up in a register
+
+
+
+
+
