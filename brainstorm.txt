@@ -1,0 +1,41 @@
+
+CPU
+
+word / register length
+defined instructions -> alu abstracted away by instrs
+
+- fetch instruction from instruction pointer 
+- decode: split word into opcode and operands
+- execute: result ends up in a register
+
+progam counter, data registers, status registers, stack pointer, memory
+
+instruction types:
+- set register to constant value (where does that value come from?)
+- copy from register to register
+- copy from register to memory adress and vice versa
+- read and write from device -> IO
+
+- add, subtract, multiply, bitshift, xor etc
+- compare to values in registers -> result? 
+
+- branch to other instruction
+- conditionally branch
+- call with later jumpback
+
+
+
+
+
+
+-- ============
+higher language keywords: 
+if, else
+int, char
+for, while, break, continue
+sizeof
+struct
+return 
+*, &, 
+
+
