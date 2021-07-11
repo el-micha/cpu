@@ -24,6 +24,9 @@ dependencies:
 
 library:
   source-dirs: src
+  when:
+    - condition: false
+      other-modules: Paths_cpu
 
 executables:
   cpu-exe:
@@ -35,6 +38,9 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - cpu
+    when:
+    - condition: false
+      other-modules: Paths_cpu
 
 tests:
   cpu-test:
@@ -46,3 +52,7 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - cpu
+    when:
+    - condition: false
+      other-modules: Paths_cpu
+    
