@@ -23,7 +23,10 @@ instruction types:
 - conditionally branch
 - call with later jumpback
 
+data CPU = Memory PC Registers
 
+need an inputstream device and an outputstream device... 
+Fetch the instruction, Fetch the operands, do the instruction, write the results.
 
 -- R opcode 6, rs 5, rt 5 rd 5, shamt 5, funct 6
 -- I opcode 6, rs 5, rt 5, immediate 16
