@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 8b02f5073064c0f0d20c9c82df256e5f0790cea51422290bdfe5385b28cdea15
+-- hash: 9ae6f54d2fc3a5f14fe5f95c8d5d2002935dcb0468f2ff7ba91979229ec90f7c
 
 name:           cpu
 version:        0.1.0.0
@@ -55,8 +55,12 @@ executable cpu-exe
 test-suite cpu-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
+  other-modules:
+      Main
+      Memory
   hs-source-dirs:
       test
+      app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
