@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 9ae6f54d2fc3a5f14fe5f95c8d5d2002935dcb0468f2ff7ba91979229ec90f7c
+-- hash: f5ffc3c65721006cb1e0446bd505e339cbf7b34a20459c4f606195aab0a8fd45
 
 name:           cpu
 version:        0.1.0.0
@@ -43,7 +43,7 @@ executable cpu-exe
       Memory
   hs-source-dirs:
       app
-  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -fwrite-ide-info -hiedir=.hie
   build-depends:
       base >=4.7 && <5
     , cpu

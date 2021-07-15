@@ -1,4 +1,5 @@
 .stack-work/
 *~
 *.lock
-ChangeLog.md
+.hie/
+stan-*
