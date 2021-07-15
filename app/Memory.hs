@@ -68,6 +68,24 @@ writeWord (Memory words) (Address n) dataWord = Memory $ replace words n dataWor
         replace (xx:xs) n x = xx : (replace xs (n-1) x)
         
 -------------------------------------------------------------------------------
+-- Registers are datawords, but addressed with a name. 
+
+data Register = Register DataWord
+  deriving  Show
+
+-- map register names to  registers
+newtype RegisterSet = RegisterSet [(String, Register)]
+  deriving  Show
+
+type Name = String
+
+mkRegisterSet :: [Name] -> RegisterSet
+mkRegisterSet names = RegisterSet $ [(name, Register emptyDataWord) | name <- names]
+
+getRegister = undefined
+
+modifyRegister = undefined
+
 
 
 
